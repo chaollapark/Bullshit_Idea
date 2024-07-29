@@ -12,3 +12,15 @@ config/*
 .env
 taskStateInfoKeypair.json
 localKOIIDB.db
+# Ignore log files
+*.log
+
+# Ignore RocksDB data files
+rocksdb/
+test-ledger/rocksdb/
+
+# Ignore snapshots or backups
+test-ledger/snapshot/
+*.tar.bz2
+
+
